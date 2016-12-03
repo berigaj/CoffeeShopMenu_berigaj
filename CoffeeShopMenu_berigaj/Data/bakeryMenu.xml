@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+  <item>
+    <ID>0</ID>
+    <Flavor>Chocolate</Flavor>
+    <Type>Cake</Type>
+    <Price>8.95</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>1</ID>
+    <Flavor>Lemon</Flavor>
+    <Type>Cake</Type>
+    <Price>8.95</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>2</ID>
+    <Flavor>Casino</Flavor>
+    <Type>Cake</Type>
+    <Price>15.95</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>3</ID>
+    <Flavor>Opera</Flavor>
+    <Type>Cake</Type>
+    <Price>15.95</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>4</ID>
+    <Flavor>Strawberry</Flavor>
+    <Type>Cake</Type>
+    <Price>11.95</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>5</ID>
+    <Flavor>Truffle</Flavor>
+    <Type>Cake</Type>
+    <Price>15.95</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>6</ID>
+    <Flavor>Chocolate</Flavor>
+    <Type>Eclair</Type>
+    <Price>3.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>7</ID>
+    <Flavor>Coffee</Flavor>
+    <Type>Eclair</Type>
+    <Price>3.5</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>8</ID>
+    <Flavor>Vanilla</Flavor>
+    <Type>Eclair</Type>
+    <Price>3.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>9</ID>
+    <Flavor>Napoleon</Flavor>
+    <Type>Cake</Type>
+    <Price>13.49</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>10</ID>
+    <Flavor>Almond</Flavor>
+    <Type>Tart</Type>
+    <Price>3.75</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>11</ID>
+    <Flavor>Apple</Flavor>
+    <Type>Pie</Type>
+    <Price>5.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>12</ID>
+    <Flavor>Apple</Flavor>
+    <Type>Tart</Type>
+    <Price>3.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>13</ID>
+    <Flavor>Apricot</Flavor>
+    <Type>Tart</Type>
+    <Price>3.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>14</ID>
+    <Flavor>Berry</Flavor>
+    <Type>Tart</Type>
+    <Price>3.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>15</ID>
+    <Flavor>Blackberry</Flavor>
+    <Type>Tart</Type>
+    <Price>3.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>16</ID>
+    <Flavor>Blueberry</Flavor>
+    <Type>Tart</Type>
+    <Price>3.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>17</ID>
+    <Flavor>Chocolate</Flavor>
+    <Type>Tart</Type>
+    <Price>3.75</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>18</ID>
+    <Flavor>Cherry</Flavor>
+    <Type>Tart</Type>
+    <Price>3.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>19</ID>
+    <Flavor>Lemon</Flavor>
+    <Type>Tart</Type>
+    <Price>3.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>20</ID>
+    <Flavor>Pecan</Flavor>
+    <Type>Tart</Type>
+    <Price>3.75</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>21</ID>
+    <Flavor>Ganache</Flavor>
+    <Type>Cookie</Type>
+    <Price>1.15</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>22</ID>
+    <Flavor>Gongolais</Flavor>
+    <Type>Cookie</Type>
+    <Price>1.15</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>23</ID>
+    <Flavor>Raspberry</Flavor>
+    <Type>Cookie</Type>
+    <Price>1.09</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>24</ID>
+    <Flavor>Lemon</Flavor>
+    <Type>Cookie</Type>
+    <Price>0.79</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>25</ID>
+    <Flavor>Chocolate</Flavor>
+    <Type>Meringue</Type>
+    <Price>1.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>26</ID>
+    <Flavor>Vanilla</Flavor>
+    <Type>Meringue</Type>
+    <Price>1.15</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>27</ID>
+    <Flavor>Marzipan</Flavor>
+    <Type>Cookie</Type>
+    <Price>1.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>28</ID>
+    <Flavor>Tuile</Flavor>
+    <Type>Cookie</Type>
+    <Price>1.25</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>29</ID>
+    <Flavor>Walnut</Flavor>
+    <Type>Cookie</Type>
+    <Price>0.79</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>30</ID>
+    <Flavor>Almond</Flavor>
+    <Type>Croissant</Type>
+    <Price>1.45</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>31</ID>
+    <Flavor>Apple</Flavor>
+    <Type>Croissant</Type>
+    <Price>1.45</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>32</ID>
+    <Flavor>Apricot</Flavor>
+    <Type>Croissant</Type>
+    <Price>1.45</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>33</ID>
+    <Flavor>Cheese</Flavor>
+    <Type>Croissant</Type>
+    <Price>1.75</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>34</ID>
+    <Flavor>Chocolate</Flavor>
+    <Type>Croissant</Type>
+    <Price>1.75</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>35</ID>
+    <Flavor>Apricot</Flavor>
+    <Type>Danish</Type>
+    <Price>1.15</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>36</ID>
+    <Flavor>Apple</Flavor>
+    <Type>Danish</Type>
+    <Price>1.15</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>37</ID>
+    <Flavor>Almond</Flavor>
+    <Type>Twist</Type>
+    <Price>1.15</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>38</ID>
+    <Flavor>Almond</Flavor>
+    <Type>Bear Claw</Type>
+    <Price>1.95</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>39</ID>
+    <Flavor>Blueberry</Flavor>
+    <Type>Danish</Type>
+    <Price>1.15</Price>
+    <Category>Food</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>40</ID>
+    <Flavor>Lemon</Flavor>
+    <Type>Lemonade</Type>
+    <Price>3.25</Price>
+    <Category>Drink</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>41</ID>
+    <Flavor>Raspberry</Flavor>
+    <Type>Lemonade</Type>
+    <Price>3.25</Price>
+    <Category>Drink</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>42</ID>
+    <Flavor>Orange</Flavor>
+    <Type>Juice</Type>
+    <Price>2.75</Price>
+    <Category>Drink</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>43</ID>
+    <Flavor>Green</Flavor>
+    <Type>Tea</Type>
+    <Price>1.85</Price>
+    <Category>Drink</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>44</ID>
+    <Flavor>Bottled</Flavor>
+    <Type>Water</Type>
+    <Price>1.8</Price>
+    <Category>Drink</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>45</ID>
+    <Flavor>Hot</Flavor>
+    <Type>Coffee</Type>
+    <Price>2.15</Price>
+    <Category>Drink</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>46</ID>
+    <Flavor>Chocolate</Flavor>
+    <Type>Coffee</Type>
+    <Price>2.45</Price>
+    <Category>Drink</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>47</ID>
+    <Flavor>Vanilla</Flavor>
+    <Type>Frappuccino</Type>
+    <Price>3.85</Price>
+    <Category>Drink</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>48</ID>
+    <Flavor>Cherry</Flavor>
+    <Type>Soda</Type>
+    <Price>1.29</Price>
+    <Category>Drink</Category>
+    <Description> desc</Description>
+  </item>
+  <item>
+    <ID>49</ID>
+    <Flavor>Single</Flavor>
+    <Type>Espresso</Type>
+    <Price>1.85</Price>
+    <Category>Drink</Category>
+    <Description> desc</Description>
+  </item>
+</menu>

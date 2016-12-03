@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using CoffeeShopMenu_berigaj;
+using Windows.UI.Xaml.Media.Imaging;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -22,9 +24,12 @@ namespace CoffeeShopMenu_berigaj
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        private List<BakeryMenu> MenuItems;
+
         public MainPage()
         {
             this.InitializeComponent();
+            MenuItems = BakeryMenuManager.GetMenuItems();
         }
     }
 }

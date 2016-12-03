@@ -5,9 +5,83 @@
     xmlns:local="using:CoffeeShopMenu_berigaj"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:CoffeeShopMenu_berigaj"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <DataTemplate x:DataType="data:MenuItems"
+                      x:Key="SkiRunListViewTemplate">
+            <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        BorderBrush="#FFF4B238"
+                        BorderThickness="1"
+                        CornerRadius="5"
+                        Background="#FFF4B238"
+                        Opacity="0.6"
+                        Width="220">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="16"
+                               Margin="10"
+                               Text="Ski Run: " />
+                    <TextBlock FontSize="16"
+                               Margin="10"
+                               Text="{x:Bind Name}" />
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+          Margin="20">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <TextBlock HorizontalAlignment="Center"
+                       Name="ResultTextBlock"
+                       FontSize="14"
+                       FontWeight="Bold"
+                       Text="Click for Details"
+                       Margin="0,20,0,0" />
+            <ListView ItemsSource="{x:Bind SkiRuns, Mode=OneWay}"
+                      Name="SkiRunListView"
+                      HorizontalAlignment="Center"
+                      IsItemClickEnabled="True"
+                      ItemClick="GridView_ItemClick"
+                      ItemTemplate="{StaticResource SkiRunListViewTemplate}"
+                      Margin="10">
+            </ListView>
+            <TextBox Name="MinimumVertical"
+                     FontSize="16"
+                     Width="200"
+                     Margin="10"
+                     TextChanged="MinimumVertical_TextChanged" />
+            <Button Name="FilterListViewButton"
+                    HorizontalAlignment="Center"
+                    Content="Filter on Name"
+                    Click="FilterListViewButton_Click" />
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock FontSize="16"
+                       Width="200"
+                       Margin="10"
+                       Text="Ski Run Information" />
+            <TextBox Name="SkiRunName"
+                     FontSize="16"
+                     Width="200"
+                     Margin="10" />
+            <Image Width="200"
+                   Name="SkiRunImage"
+                   Grid.Row="1"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="10" />
+        </StackPanel>
 
     </Grid>
 </Page>

@@ -6,120 +6,112 @@ using System.Threading.Tasks;
 
 namespace CoffeeShopMenu_berigaj
 {
-    class BakeryMenuManager
-    {
-        public static async Task<T> ReadXMLFileAsync<T>(string filename)
+   public class BakeryMenuDataManagerXml : IDisposable
         {
-             private List<BakeryMenu> _skiRuns;
+            private List<BakeryMenu> _menuItems;
 
-        public BakeryMenuDataManagerXml(List<BakeryMenu> menuItems)
-        {
-            _menuItems = menuItems;
-        }
-
-        /// <summary>
-        /// method to return a list of menu items
-        /// </summary>
-        /// <returns>list of menu item objects</returns>
-        public List<BakeryMenu> GetAllMenuItems()
-        {
-            return _menuItems;
-        }
-
-        /// <summary>
-        /// method to return the index of a given menu item
-        /// <param name="BakeryMenu"></param>
-        /// <returns>int ID</returns>
-        private int GetItemsByIndex(int ID)
-        {
-            int menuItemIndex = 0;
-
-            for (int index = 0; index < _menuItems.Count(); index++)
+            public BakeryMenuDataManagerXml(List<BakeryMenu> menuItems)
             {
-                if (_menuItems[index].ID == ID)
-                {
-                    menuItemIndex = index;
-                }
+                _menuItems = menuItems;
             }
 
-            return menuItemIndex;
-        }
-
-        /// <summary>
-        /// method to add a new menu item
-        /// </summary>
-        /// <param name="_menuItems"></param>
-        public async void InsertBakeryMenu(BakeryMenu menuItem)
-        {
-            _menuItems.Add(menuItem);
-
-            await DataServiceXml.SaveObjectToXml(_menuItems, "BakeryMenu.xml");
-        }
-
-        /// <summary>
-        /// method to delete a menu item by ID
-        /// </summary>
-        /// <param name="ID"></param>
-        public async void DeleteMenuItem(int ID)
-        {
-            _menuItems.RemoveAt(GetMenuItemByIndex(ID));
-
-            await DataServiceXml.SaveObjectToXml(_skiRuns, "SkiRuns.xml");
-        }
-
-        /// <summary>
-        /// method to update an existing ski run
-        /// </summary>
-        /// <param name="skiRun">ski run object</param>
-        public async void UpdateSkiRun(SkiRun skiRun)
-        {
-            DeleteSkiRun(skiRun.ID);
-            InsertSkiRun(skiRun);
-
-            await SkiRunsDataServiceXml.SaveObjectToXml(_skiRuns, "SkiRuns.xml");
-        }
-
-        /// <summary>
-        /// method to return a ski run object given the ID
-        /// </summary>
-        /// <param name="ID">int ID</param>
-        /// <returns>ski run object</returns>
-        public SkiRun GetSkiRunByID(int ID)
-        {
-            SkiRun skiRun = null;
-
-            skiRun = _skiRuns[GetSkiRunByIndex(ID)];
-
-            return skiRun;
-        }
-
-        /// <summary>
-        /// method to query the data by the vertical of each ski run in feet
-        /// </summary>
-        /// <param name="minimumVertical">int minimum vertical</param>
-        /// <param name="maximumVertical">int maximum vertical</param>
-        /// <returns></returns>
-        public List<SkiRun> QueryByVertical(int minimumVertical, int maximumVertical)
-        {
-            List<SkiRun> matchingSkiRuns = new List<SkiRun>();
-
-            foreach (var skiRun in _skiRuns)
+            /// <summary>
+            /// method to return a list of menu items
+            /// </summary>
+            /// <returns>list of menu item objects</returns>
+            public List<BakeryMenu> GetAllMenuItems()
             {
-                if ((skiRun.Vertical >= minimumVertical) && (skiRun.Vertical <= maximumVertical))
-                {
-                    matchingSkiRuns.Add(skiRun);
-                }
+                return _menuItems;
             }
 
-            return matchingSkiRuns;
-        }
+            /// <summary>
+            /// method to return the index of a given menu item
+            /// <param name="menuItem"></param>
+            /// <returns>int ID</returns>
+            private int GetMenuItemByIndex(int ID)
+            {
+                int menuItemIndex = 0;
 
-        /// <summary>
-        /// method to handle the IDisposable interface contract
-        /// </summary>
-        public void Dispose()
-        {
-            _skiRuns = null;
+                for (int index = 0; index < _menuItems.Count(); index++)
+                {
+                    if (_menuItems[index].ID == ID)
+                    {
+                        menuItemIndex = index;
+                    }
+                }
+
+                return menuItemIndex;
+            }
+
+            /// <summary>
+            /// method to add a new menu Item
+            /// </summary>
+            /// <param name="_menuItems"></param>
+            public async void InsertMenuItem(BakeryMenu menuItem)
+            {
+                _menuItems.Add(menuItem);
+
+                await DataServiceXML.SaveObjectToXml(_menuItems, "BakeryMenu.xml");
+            }
+
+            /// <summary>
+            /// method to delete a menu item by ID
+            /// </summary>
+            /// <param name="ID"></param>
+            public async void DeleteMenuItem(int ID)
+            {
+                _menuItems.RemoveAt(GetMenuItemByIndex(ID));
+
+                await DataServiceXML.SaveObjectToXml(_menuItems, "BakeryMenu.xml");
+            }
+
+            /// <summary>
+            /// method to update an existing menu item
+            /// </summary>
+            /// <param name="menuItem">menu item object</param>
+            public async void UpdateMenuItem(BakeryMenu menuItem)
+            {
+                DeleteMenuItem(menuItem.ID);
+                InsertMenuItem(menuItem);
+
+                await DataServiceXML.SaveObjectToXml(_menuItems, "BakeryMenu.xml");
+            }
+
+            /// <summary>
+            /// method to return a ski run object given the ID
+            /// </summary>
+            /// <param name="ID">int ID</param>
+            /// <returns>ski run object</returns>
+            public BakeryMenu GetMenuItemByID(int ID)
+            {
+                BakeryMenu menuItem = null;
+
+                menuItem = _menuItems[GetMenuItemByIndex(ID)];
+
+                return menuItem;
+            }
+        
+            public List<BakeryMenu> QueryByPrice(double minPrice, double maxPrice)
+            {
+                List<BakeryMenu> matchingMenuItems = new List<BakeryMenu>();
+
+                foreach (var menuItem in _menuItems)
+                {
+                    if ((menuItem.Price >= minPrice) && (menuItem.Price <= maxPrice))
+                    {
+                        matchingMenuItems.Add(menuItem);
+                    }
+                }
+
+                return matchingMenuItems;
+            }
+
+            /// <summary>
+            /// method to handle the IDisposable interface contract
+            /// </summary>
+            public void Dispose()
+            {
+                _menuItems = null;
+            }
         }
     }
-}

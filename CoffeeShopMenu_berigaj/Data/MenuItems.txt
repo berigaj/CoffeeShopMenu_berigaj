@@ -1,51 +1,51 @@
-﻿ID,Flavor,Type,Price,Category, Description
-0,Chocolate,Cake,8.95,Food, desc
-1,Lemon,Cake,8.95,Food, desc
-2,Casino,Cake,15.95,Food, desc
-3,Opera,Cake,15.95,Food, desc
-4,Strawberry,Cake,11.95,Food, desc
-5,Truffle,Cake,15.95,Food, desc
-6,Chocolate,Eclair,3.25,Food, desc
-7,Coffee,Eclair,3.50,Food, desc
-8,Vanilla,Eclair,3.25,Food, desc
-9,Napoleon,Cake,13.49,Food, desc
-10,Almond,Tart,3.75,Food, desc
-11,Apple,Pie,5.25,Food, desc
-12,Apple,Tart,3.25,Food, desc
-13,Apricot,Tart,3.25,Food, desc
-14,Berry,Tart,3.25,Food, desc
-15,Blackberry,Tart,3.25,Food, desc
-16,Blueberry,Tart,3.25,Food, desc
-17,Chocolate,Tart,3.75,Food, desc
-18,Cherry,Tart,3.25,Food, desc
-19,Lemon,Tart,3.25,Food, desc
-20,Pecan,Tart,3.75,Food, desc
-21,Ganache,Cookie,1.15,Food, desc
-22,Gongolais,Cookie,1.15,Food, desc
-23,Raspberry,Cookie,1.09,Food, desc
-24,Lemon,Cookie,0.79,Food, desc
-25,Chocolate,Meringue,1.25,Food, desc
-26,Vanilla,Meringue,1.15,Food, desc
-27,Marzipan,Cookie,1.25,Food, desc
-28,Tuile,Cookie,1.25,Food, desc
-29,Walnut,Cookie,0.79,Food, desc
-30,Almond,Croissant,1.45,Food, desc
-31,Apple,Croissant,1.45,Food, desc
-32,Apricot,Croissant,1.45,Food, desc
-33,Cheese,Croissant,1.75,Food, desc
-34,Chocolate,Croissant,1.75,Food, desc
-35,Apricot,Danish,1.15,Food, desc
-36,Apple,Danish,1.15,Food, desc
-37,Almond,Twist,1.15,Food, desc
-38,Almond,Bear Claw,1.95,Food, desc
-39,Blueberry,Danish,1.15,Food, desc
-40,Lemon,Lemonade,3.25,Drink, desc
-41,Raspberry,Lemonade,3.25,Drink, desc
-42,Orange,Juice,2.75,Drink, desc
-43,Green,Tea,1.85,Drink, desc
-44,Bottled,Water,1.80,Drink, desc
-45,Hot,Coffee,2.15,Drink, desc
-46,Chocolate,Coffee,2.45,Drink, desc
-47,Vanilla,Frappuccino,3.85,Drink, desc
-48,Cherry,Soda,1.29,Drink, desc
-49,Single,Espresso,1.85,Drink, desc
+﻿ID,Flavor,Type,Price,Category, Description, MenuImage
+0,Chocolate,Cake,8.95,Food, desc, img.jpg
+1,Lemon,Cake,8.95,Food, desc, img.jpg
+2,Casino,Cake,15.95,Food, desc, img.jpg
+3,Opera,Cake,15.95,Food, desc, img.jpg
+4,Strawberry,Cake,11.95,Food, desc, img.jpg
+5,Truffle,Cake,15.95,Food, desc, img.jpg
+6,Chocolate,Eclair,3.25,Food, desc, img.jpg
+7,Coffee,Eclair,3.50,Food, desc, img.jpg
+8,Vanilla,Eclair,3.25,Food, desc, img.jpg
+9,Napoleon,Cake,13.49,Food, desc, img.jpg
+10,Almond,Tart,3.75,Food, desc, img.jpg
+11,Apple,Pie,5.25,Food, desc, img.jpg
+12,Apple,Tart,3.25,Food, desc, img.jpg
+13,Apricot,Tart,3.25,Food, desc, img.jpg
+14,Berry,Tart,3.25,Food, desc, img.jpg
+15,Blackberry,Tart,3.25,Food, desc, img.jpg
+16,Blueberry,Tart,3.25,Food, desc, img.jpg
+17,Chocolate,Tart,3.75,Food, desc, img.jpg
+18,Cherry,Tart,3.25,Food, desc, img.jpg
+19,Lemon,Tart,3.25,Food, desc, img.jpg
+20,Pecan,Tart,3.75,Food, desc, img.jpg
+21,Ganache,Cookie,1.15,Food, desc, img.jpg
+22,Gongolais,Cookie,1.15,Food, desc, img.jpg
+23,Raspberry,Cookie,1.09,Food, desc, img.jpg
+24,Lemon,Cookie,0.79,Food, desc, img.jpg
+25,Chocolate,Meringue,1.25,Food, desc, img.jpg
+26,Vanilla,Meringue,1.15,Food, desc, img.jpg
+27,Marzipan,Cookie,1.25,Food, desc, img.jpg
+28,Tuile,Cookie,1.25,Food, desc, img.jpg
+29,Walnut,Cookie,0.79,Food, desc, img.jpg
+30,Almond,Croissant,1.45,Food, desc, img.jpg
+31,Apple,Croissant,1.45,Food, desc, img.jpg
+32,Apricot,Croissant,1.45,Food, desc, img.jpg
+33,Cheese,Croissant,1.75,Food, desc, img.jpg
+34,Chocolate,Croissant,1.75,Food, desc, img.jpg
+35,Apricot,Danish,1.15,Food, desc, img.jpg
+36,Apple,Danish,1.15,Food, desc, img.jpg
+37,Almond,Twist,1.15,Food, desc, img.jpg
+38,Almond,Bear Claw,1.95,Food, desc, img.jpg
+39,Blueberry,Danish,1.15,Food, desc, img.jpg
+40,Lemon,Lemonade,3.25,Drink, desc, img.jpg
+41,Raspberry,Lemonade,3.25,Drink, desc, img.jpg
+42,Orange,Juice,2.75,Drink, desc, img.jpg
+43,Green,Tea,1.85,Drink, desc, img.jpg
+44,Bottled,Water,1.80,Drink, desc, img.jpg
+45,Hot,Coffee,2.15,Drink, desc, img.jpg
+46,Chocolate,Coffee,2.45,Drink, desc, img.jpg
+47,Vanilla,Frappuccino,3.85,Drink, desc, img.jpg
+48,Cherry,Soda,1.29,Drink, desc, img.jpg
+49,Single,Espresso,1.85,Drink, desc, img.jpg

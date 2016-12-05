@@ -14,6 +14,7 @@ namespace CoffeeShopMenu_berigaj
         public double Price { get; set; }
         public string Category { get; set; }
         public string MenuImage { get; set; }
+        public string Description { get; set; }
 
     }
 }

@@ -113,6 +113,41 @@
     <None Include="CoffeeShopMenu_berigaj_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\almond_tart.jpg" />
+    <Content Include="Assets\apple_pie.jpg" />
+    <Content Include="Assets\apple_tart.jpg" />
+    <Content Include="Assets\apricot_tart.jpg" />
+    <Content Include="Assets\berry_tart.jpg" />
+    <Content Include="Assets\blackberry_tart.jpg" />
+    <Content Include="Assets\blueberry_tart.jpg" />
+    <Content Include="Assets\bottled_water.jpg" />
+    <Content Include="Assets\casino_cake.jpg" />
+    <Content Include="Assets\cherry_soda.jpg" />
+    <Content Include="Assets\cherry_tart.jpg" />
+    <Content Include="Assets\chocolate_cake.jpg" />
+    <Content Include="Assets\chocolate_coffee.jpg" />
+    <Content Include="Assets\chocolate_elcair.jpg" />
+    <Content Include="Assets\chocolate_tart.jpg" />
+    <Content Include="Assets\coffee_eclair.jpg" />
+    <Content Include="Assets\congolais_cookie.jpg" />
+    <Content Include="Assets\ganache_cookie.jpg" />
+    <Content Include="Assets\green_tea.jpg" />
+    <Content Include="Assets\hot_coffee.jpg" />
+    <Content Include="Assets\lemonade.jpg" />
+    <Content Include="Assets\lemon_cake.jpg" />
+    <Content Include="Assets\lemon_cookie.jpg" />
+    <Content Include="Assets\lemon_tart.jpg" />
+    <Content Include="Assets\napoleon_cake.jpg" />
+    <Content Include="Assets\opera_cake.jpg" />
+    <Content Include="Assets\orange_juice.jpg" />
+    <Content Include="Assets\pecan_tart.jpg" />
+    <Content Include="Assets\raspberry_cookie.jpg" />
+    <Content Include="Assets\raspberry_lemonade.jpg" />
+    <Content Include="Assets\single_espresso.jpg" />
+    <Content Include="Assets\strawberry_cake.jpg" />
+    <Content Include="Assets\truffle_cake.jpg" />
+    <Content Include="Assets\vanilla_eclair.jpg" />
+    <Content Include="Assets\vanilla_frappuccino.jpg" />
     <Content Include="Data\MenuItems.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

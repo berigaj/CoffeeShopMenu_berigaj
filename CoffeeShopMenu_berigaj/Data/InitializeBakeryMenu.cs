@@ -13,8 +13,18 @@ namespace CoffeeShopMenu_berigaj
             List<BakeryMenu> menuItems = new List<BakeryMenu>();
 
             // initialize the IList of high scores - note: no instantiation for an interface
-            menuItems.Add(new BakeryMenu() { ID = 0, Flavor = "Chocolate", Type="Cake", Price = 8.95,Category="Food", Description="Chocolate cake description", MenuImage = "" });
-            menuItems.Add(new BakeryMenu() { ID = 1, Flavor="Lemon", Type="Cake", Price=8.95, Category="Food", Description="Lemon cake desc",MenuImage = "" });
+            menuItems.Add(new BakeryMenu() {ID = 0, Flavor = "Chocolate", Type = "Cake", Price = 8.95, Category = "Food", Description = "A rich chocolate cake with chocolate frosting", MenuImage = "chocolate_cake.jpg" });
+            menuItems.Add(new BakeryMenu() {ID = 0, Flavor = "Chocolate", Type = "Cake", Price = 8.95, Category = "Food", Description = "A rich chocolate cake with chocolate frosting", MenuImage = "lemon_cake.jpg" });
+            menuItems.Add(new BakeryMenu() { ID = 0, Flavor = "Chocolate", Type = "Cake", Price = 8.95, Category = "Food", Description = "A rich chocolate cake with chocolate frosting", MenuImage = "chocolate_cake.jpg" });
+            menuItems.Add(new BakeryMenu() { ID = 0, Flavor = "Chocolate", Type = "Cake", Price = 8.95, Category = "Food", Description = "A rich chocolate cake with chocolate frosting", MenuImage = "chocolate_cake.jpg" });
+            menuItems.Add(new BakeryMenu() { ID = 0, Flavor = "Chocolate", Type = "Cake", Price = 8.95, Category = "Food", Description = "A rich chocolate cake with chocolate frosting", MenuImage = "chocolate_cake.jpg" });
+            menuItems.Add(new BakeryMenu() { ID = 0, Flavor = "Chocolate", Type = "Cake", Price = 8.95, Category = "Food", Description = "A rich chocolate cake with chocolate frosting", MenuImage = "chocolate_cake.jpg" });
+            menuItems.Add(new BakeryMenu() { ID = 0, Flavor = "Chocolate", Type = "Cake", Price = 8.95, Category = "Food", Description = "A rich chocolate cake with chocolate frosting", MenuImage = "chocolate_cake.jpg" });
+            menuItems.Add(new BakeryMenu() { ID = 0, Flavor = "Chocolate", Type = "Cake", Price = 8.95, Category = "Food", Description = "A rich chocolate cake with chocolate frosting", MenuImage = "chocolate_cake.jpg" });
+            menuItems.Add(new BakeryMenu() { ID = 0, Flavor = "Chocolate", Type = "Cake", Price = 8.95, Category = "Food", Description = "A rich chocolate cake with chocolate frosting", MenuImage = "chocolate_cake.jpg" });
+            menuItems.Add(new BakeryMenu() { ID = 0, Flavor = "Chocolate", Type = "Cake", Price = 8.95, Category = "Food", Description = "A rich chocolate cake with chocolate frosting", MenuImage = "chocolate_cake.jpg" });
+            menuItems.Add(new BakeryMenu() { ID = 0, Flavor = "Chocolate", Type = "Cake", Price = 8.95, Category = "Food", Description = "A rich chocolate cake with chocolate frosting", MenuImage = "chocolate_cake.jpg" });
+            menuItems.Add(new BakeryMenu() { ID = 0, Flavor = "Chocolate", Type = "Cake", Price = 8.95, Category = "Food", Description = "A rich chocolate cake with chocolate frosting", MenuImage = "chocolate_cake.jpg" });
             
             await DataServiceXML.SaveObjectToXml(menuItems, "BakeryMenu.xml");
         }

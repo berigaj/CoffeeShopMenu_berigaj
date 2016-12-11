@@ -26,6 +26,8 @@ namespace CoffeeShopMenu_berigaj
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        public TextWrapping TextWrapping { get; set; }
+
         private List<BakeryMenu> MenuItems;
 
         public MainPage()
@@ -47,30 +49,11 @@ namespace CoffeeShopMenu_berigaj
         {
             var menuItem = (BakeryMenu)e.ClickedItem;
             MenuItemName.Text = menuItem.Flavor;
+            MenuItemMeta.Text = ("PRICE: " + menuItem.Price + "  |  " + "CATEGORY: " + menuItem.Category);
+            MenuItemDetails.Text = menuItem.Description;
 
             BitmapImage bitmapImage = new BitmapImage(new Uri(this.BaseUri, $"/{menuItem.MenuImage}"));
             MenuImage.Source = bitmapImage;
-        }
-        private void FilterListView_btn_Click(object sender, RoutedEventArgs e)
-        {
-            List<BakeryMenu> filteredListMenuItems = new List<BakeryMenu>();
-
-            foreach (BakeryMenu menuItem in MenuItems)
-            {
-                if (menuItem.Category == ViewCategory.Text)
-                {
-                    filteredListMenuItems.Add(menuItem);
-                }
-            }
-
-            MenuItems = filteredListMenuItems;
-
-            MenuItemListView.ItemsSource = filteredListMenuItems;
-        }
-
-        private void ViewCategory_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

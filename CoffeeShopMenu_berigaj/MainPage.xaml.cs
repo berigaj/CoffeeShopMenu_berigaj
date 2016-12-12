@@ -26,9 +26,7 @@ namespace CoffeeShopMenu_berigaj
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public TextWrapping TextWrapping { get; set; }
-
-        private List<BakeryMenu> MenuItems;
+       private List<BakeryMenu> MenuItems;
 
         public MainPage()
         {
@@ -54,6 +52,25 @@ namespace CoffeeShopMenu_berigaj
 
             BitmapImage bitmapImage = new BitmapImage(new Uri(this.BaseUri, $"/{menuItem.MenuImage}"));
             MenuImage.Source = bitmapImage;
+        }
+
+        private void SortByPrice_Click(object sender, RoutedEventArgs e)
+        {
+            List<BakeryMenu> sortedListMenuItems = new List<BakeryMenu>();
+
+            var sortedProducts =
+                from menuItem in MenuItems
+                orderby menuItem.Price descending
+                select menuItem;
+
+            foreach (BakeryMenu menuItem in sortedListMenuItems)
+            {
+                sortedListMenuItems.Add(menuItem);
+            }
+
+            MenuItems = sortedListMenuItems;
+
+            MenuItemListView.ItemsSource = sortedListMenuItems;
         }
     }
 }
